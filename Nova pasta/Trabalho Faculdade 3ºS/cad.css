@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #1e90ff;
+    color: white;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.1px 1px;
+}
+
+.logo {
+    background-image: url('imagens/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 300px;
+    height: 100px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.search-bar input {
+    border: none;
+    padding: 8px 12px;
+    outline: none;
+    width: 600px;
+}
+
+.search-bar button {
+    background-color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.top-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.top-links a {
+    color: white;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.cart {
+    color: black;
+    background-image: url('imagens/bolsa.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.cart span {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: yellow;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #CBE5F6;
+    margin: 0;
+    padding: 10px 0;
+}
+
+nav li {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.cadastro-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cadastro-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cadastro-container input {
+    width: 94.6%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+}
+
+.cadastro-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cadastro-container button:hover {
+    background-color: #187bcd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.wrapper {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2196f3;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1976d2;
+}
+
+.link {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.link a {
+    color: #2196f3;
+    text-decoration: none;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}

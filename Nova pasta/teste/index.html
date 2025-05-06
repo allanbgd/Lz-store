@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='prod.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+  <header>
+
+    <div class="top-bar">
+
+        <a href="index.html">
+            <div class="logo"></div>
+        </a>
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquisa">
+            <button>&#10140;</button>
+        </div>
+        <div class="top-links">
+            <a href="devolucao_pedi.html">Devolução e pedidos</a>
+            <a href="login.html">Entre ou cadastre-se</a>
+
+            <a href="carrinho.html">
+                <div class="cart"><span>0</span></div>
+            </a>
+        </div>
+    </div>
+
+    <div class="espaco"></div>
+
+    <nav>
+        <ul>
+            <li>Todos</li>
+            <li>Mais vendido</li>
+            <li>Casa</li>
+            <li>Cozinha</li>
+            <li>Eletrônicos</li>
+            <li>Beleza</li>
+            <li>Moda</li>
+            <li>Esportes</li>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+  <nav class="breadcrumb">
+   
+  </nav>
+
+  <main class="product">
+    <!-- Galeria de imagens -->
+    <section class="gallery">
+        <img id="imagem-principal" src="imagens/chaleira.png" alt="Chaleira Elétrica" class="main-image" />
+        <div class="thumbnails">
+          <img src="imagens/chaleira.png" alt="1" onclick="trocarImagem(this)" />
+          <img src="imagens/caixa_tin.png" alt="2" onclick="trocarImagem(this)" />
+          <img src="imagens/ctr_xs.png" alt="3" onclick="trocarImagem(this)" />
+          <img src="imagens/fone_AD2.png" alt="4" onclick="trocarImagem(this)" />
+        </div>
+      </section>
+      
+
+    <!-- Informações do produto -->
+    <section class="details">
+      <h1>Chaleira Elétrica Britânia</h1>
+      <p class="price">R$ 199,90</p>
+      <p class="installment">Em até 10x de R$ 19,99 sem juros</p>
+
+      <div class="payment-options">
+        <button class="btn-payment">Cartão de Crédito</button>
+        <button class="btn-payment">Pix</button>
+      </div>
+
+      <div class="selector">
+        <label>Escolha a voltagem:</label>
+        <div class="options">
+          <button>127V</button>
+          <button>220V</button>
+        </div>
+      </div>
+
+      <div class="selector">
+        <label>Escolha a quantidade:</label>
+        <div class="quantity">
+          <button>-</button>
+          <span>1</span>
+          <button>+</button>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="buy">Comprar agora</button>
+        <button class="cart1">Adicionar ao carrinho</button>
+      </div>
+
+  
+      <p class="note">Os prazos de entrega começam a contar a partir da confirmação de pagamento!</p>
+    </section>
+
+  </main>
+</div>
+
+
+
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="#">Trabalhe conosco</a>
+    <a href="#">Termos e condições</a>
+    <a href="#">Promoções</a>
+    <a href="#">Como cuidamos da sua privacidade</a>
+    <a href="#">Acessibilidade</a>
+    <a href="#">Contato</a>
+    <a href="#">Informações sobre seguros</a>
+    <a href="#">Programa de Afiliados</a>
+    <a href="#">Lista de presentes</a>
+  </div>
+  <div class="footer-info">
+    <p>Copyright © 1999-2025 SuaLoja.com.br LTDA.</p>
+    <p>CNPJ n.º 00.000.000/0001-00 / Av. Exemplo, nº 123, Cidade/SP - CEP 00000-000 - empresa fictícia.</p>
+  </div>
+</footer>
+
+</body>
+</html>
