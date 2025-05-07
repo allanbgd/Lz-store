@@ -20,7 +20,7 @@
         /* font-size: 24px;
         font-weight: bold;
         width: 10px; */
-        background-image: url('/FinalProject/Trabalho\ Faculdade\ 3ºS/imagens/logo.png');
+        background-image: url('./FinalProject/trabalho_facul/imagens/icones/logo.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -66,7 +66,7 @@
     .cart {
         /* background-color: white; */
         color: black;
-        background-image: url('/FinalProject/Trabalho\ Faculdade\ 3ºS/imagens/bolsa.png');
+        background-image: url('/FinalProject/trabalho_facul/imagens/icones/bolsa.png');
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
