@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Atendente - Painel</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        #chat { border: 1px solid #ccc; padding: 10px; height: 300px; overflow-y: scroll; }
+        #mensagem { width: 80%; }
+        button { padding: 6px 10px; }
+    </style>
+</head>
+<body>
+    <h2>Painel do Atendente</h2>
+    <div id="chat"></div>
+    <input type="text" id="mensagem" placeholder="Digite sua resposta...">
+    <button onclick="enviarMensagem()">Enviar</button>
+
+    <script>
+        function atualizarChat() {
+            fetch('/mensagens')
+                .then(response => response.json())
+                .then(data => {
+                    const chat = document.getElementById('chat');
+                    chat.innerHTML = "";
+                    data.forEach(item => {
+                        if (item.autor === 'cliente') {
+                            chat.innerHTML += `<p><strong>Cliente:</strong> ${item.mensagem}</p>`;
+                        } else if (item.autor === 'bot') {
+                            chat.innerHTML += `<p><strong>Bot:</strong> ${item.mensagem}</p>`;
+                        } else if (item.autor === 'atendente') {
+                            chat.innerHTML += `<p><strong>Você:</strong> ${item.mensagem}</p>`;
+                        }
+                    });
+                    chat.scrollTop = chat.scrollHeight;
+                });
+        }
+
+        function enviarMensagem() {
+            const mensagem = document.getElementById('mensagem').value;
+            if (mensagem.trim() === "") return;
+            fetch('/enviar_atendente', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ mensagem: mensagem })
+            }).then(() => {
+                document.getElementById('mensagem').value = "";
+                atualizarChat();
+            });
+        }
+
+        setInterval(atualizarChat, 1000);
+        atualizarChat();
+    </script>
+</body>
+</html>
